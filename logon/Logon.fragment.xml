@@ -1,0 +1,32 @@
+<core:FragmentDefinition
+  xmlns="sap.m"
+  xmlns:core="sap.ui.core"
+  >
+  <Dialog
+    title="LogIn, Please"
+    type="Standard" >
+    
+    <VBox>
+    <Input
+        type="Text"
+        placeholder="User Name"
+        enabled="true"
+        editable="true"
+      />    
+    <Input
+        type="Password"
+        placeholder="Password"
+        enabled="true"
+        editable="true"
+      />    
+
+      <Button text="Log In" press="logonClicked" width="100%"/>
+      
+      <FlexBox  justifyContent="SpaceBetween">
+	      <CheckBox text="Remember me"></CheckBox>
+	      <Link text="Forgot password?"></Link>
+      </FlexBox>
+    </VBox>
+    
+  </Dialog>
+</core:FragmentDefinition>
